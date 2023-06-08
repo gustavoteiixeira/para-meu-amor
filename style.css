@@ -1,0 +1,197 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #fac9c9; /* rosa claro */
+  padding-top: 135px;
+}
+
+header {
+  background-color: #ffb4b4; /* vermelho escuro */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+  
+  .header-title {
+    margin-right: 20px;
+  }
+
+main {
+	margin: 20px auto;
+	max-width: 1200px;
+}
+
+
+section {
+    background-color: #f2d9d9; /* rosa claro */
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .love-letter {
+    color: #8e3e3e; /* vermelho escuro */
+  }
+  
+  
+  .love-letter p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .love-letter p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #8e3e3e; /* vermelho escuro */
+  }
+  
+  .love-letter {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  .love-letter p:first-of-type {
+    margin-top: 0;
+  }
+  
+  .love-letter p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+section h2 {
+	margin-bottom: 20px;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.gallery a {
+    display: block;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery a::after {
+    content: '';
+    background-color: rgba(142, 62, 62, 0.5); /* vermelho escuro transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  
+  .gallery a:hover::after {
+    opacity: 1;
+  }
+  
+  .gallery a::before {
+    content: '\f03e';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  
+.love-letter {
+color: #8b0000; /* vermelho escuro */
+}
+
+h2 {
+font-size: 48px;
+margin-bottom: 30px;
+color: #ffa9a9; /* roxo escuro */
+}
+
+section {
+background-color: #ffe6e6; /* rosa claro */
+padding: 60px;
+text-align: center;
+}
+
+.gallery a::after {
+content: '';
+background-color: #fac9c967; /* roxo escuro com transparência */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 0.8s ease;
+}
+
+.gallery a:hover::after {
+opacity: 1;
+}
+
+
+.gallery a:hover::before {
+opacity: 1;
+}
+
+footer {
+background-color: #ffb4b4; 
+color: #ff3232;
+padding: 20px;
+text-align: center;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
